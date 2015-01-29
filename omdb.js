@@ -6,9 +6,10 @@ $(document).ready(function() {
 		console.log(test);
 
 		$.ajax({
-			url: "http://www.omdbapi.com/?t=" + test,
+			url: "http://www.omdbapi.com/?s=" + test,
 			success: function (data){
 				console.log(data);
+				$("body").append("<h2>" + data + "</h2>")
 			}
 		});
 
