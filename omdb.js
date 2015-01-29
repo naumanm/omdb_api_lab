@@ -9,7 +9,10 @@ $(document).ready(function() {
 			url: "http://www.omdbapi.com/?s=" + test,
 			success: function (data){
 				console.log(data);
-				$("body").append("<h2>" + data + "</h2>")
+				$("body").append("<h2>" + data + "</h2>")			
+
+				// this is where the bonus ajax would go
+
 			}
 		});
 
